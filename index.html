@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarTrades</title>
+    <!-- Agregar el favicon -->
+    <link rel="icon" href="public/logo.png" type="image/x-icon">
+    <style>
+        /* Estilos generales ... */
+        body {
+            background-image: url('public/abstractbg4.jpg'); /* Ruta de tu imagen de fondo */
+            background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            background-attachment: fixed; /* Fija la imagen para que no se desplace con el contenido */
+            background-color: #222; /* Fondo gris oscuro si la imagen no se carga */
+            color: white;
+            font-family: Arial, sans-serif; /* Fuente Arial, sans-serif */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos del encabezado */
+        header {
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro y semi-transparente */
+            padding: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: none;
+        }
+
+        header h1 {
+            margin: 0;
+            color: white; /* Letras blancas */
+        }
+
+        /* Estilos de los menús */
+        .menu {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .menu-item {
+            text-decoration: none;
+            color: white;
+            padding: 5px 0; /* Reducción del espacio vertical */
+            transition: border-bottom 0.3s ease; /* Transición del subrayado */
+            display: flex;
+            align-items: center; /* Alineación vertical */
+        }
+
+        .menu-item:hover::before {
+            content: "\25BC"; /* Flecha hacia abajo */
+            margin-left: 5px; /* Espacio entre la letra y la flecha */
+            opacity: 0.7; /* Hacer la flecha semi-transparente al pasar el mouse */
+        }
+
+        /* Estilos del logo */
+        .logo {
+            width: 60px;
+            height: 60px;
+        }
+
+        /* Estilos de la sección de trades */
+        .trades-section {
+            padding: 20px;
+        }
+
+        .trade {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .trade img {
+            max-width: 100px;
+            max-height: 100px;
+        }
+
+        /* Resto de tus estilos ... */
+
+        /* Estilos del mensaje de mantenimiento */
+        .maintenance-message {
+            text-align: center;
+            font-size: 24px;
+            margin: 20px;
+        }
+
+        /* Estilos del banner de mantenimiento */
+        .maintenance-banner {
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999; /* Para que esté por encima del contenido */
+        }
+
+        .maintenance-banner img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>StarTrades</h1>
+        <nav class="menu">
+            <a class="menu-item" href="#">Trades</a>
+            <a class="menu-item" href="#">Values</a>
+            <a class="menu-item" href="mm2.html">MM2</a> <!-- Enlace a la nueva página "mm2.html" -->
+            <a class="menu-item" href="#">Adopt Me</a>
+            <a class="menu-item" href="#">GlobalTrades</a>
+        </nav>
+        <img class="logo" src="public/logo.png" alt="Logo de StarTrades">
+    </header>
+    <div class="maintenance-message">
+        <p>¡El sitio está en mantenimiento!</p>
+        <p>Volveremos pronto.</p>
+        <p>Solo contamos con MM2 Values.</p>
+    </div>
+    <!-- Banner de mantenimiento -->
+    <div class="maintenance-banner">
+        <img src="public/banner.png" alt="Mantenimiento">
+    </div>
+</body>
+</html>
